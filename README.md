@@ -29,6 +29,5 @@ git version 2.36.1.windows.1
         git branch -m main 
 
     git push -u modelpaper main 
+#Also fot the prject is necessary that in you text editor you´ve Jupyter Notebook
 
-
-# Also for the project is necessary that in you text editor you´ve Jupyter Notebook. 
