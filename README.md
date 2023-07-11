@@ -29,11 +29,4 @@ git version 2.36.1.windows.1
         git branch -m main 
 
     git push -u modelpaper main 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
-```
-#Also fot the prject is necessary that in you text editor you´ve Jupyter Notebook
-
->>>>>>> 64257d4f20981f9e4257eeee4a49d08e2f4676a9
