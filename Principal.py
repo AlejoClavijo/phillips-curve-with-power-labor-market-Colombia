@@ -84,3 +84,32 @@ def type(Data_Merge,colum):
 for i, d in enumerate(Data_Merge):
     sorted_df = d.sort_values(by="CIIU")
     Data_Merge[i] = sorted_df 
+
+
+
+########
+
+#for df in Data_Merge:
+#    if len(df.columns) > 3:  #Verificar si el dataframe tiene al menos 4 columnas
+#        df.columns.values[3] = "CIIU" #Me cambia el name de el label 
+
+#############
+
+#Selection algoritms
+
+import pandas as pd 
+import numpy as np
+
+X=pd.DataFrame(columns=(1,2),index=("a","b","c"))
+print("PRIMER DATAFRAME" )
+
+Y=pd.DataFrame(columns=(1,2),index=(1,2,3,4,5,6,7,8,9,10,11,12))
+Y[1] = ["a","a","b","a","b","a","c","a","c","b","a","b"]
+Y[2] = [10, 20, 30, 40, 50, 60,70,80,90,100,110,120]
+
+for index in X.index:
+    total = Y[Y[1] == index][2].sum()
+    X.loc[index, 1] = total
+
+
+print(Y.index)
